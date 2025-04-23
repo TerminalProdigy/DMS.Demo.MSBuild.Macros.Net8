@@ -6,4 +6,27 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- Log the build macro values. -->
+  <Target Name="Log Macros" BeforeTargets="PreBuildEvent">
+    <Message Text="OutputPath: $(OutputPath)" Importance="high" />
+    <Message Text="Configuration: $(Configuration)" Importance="high" />
+    <Message Text="MSBuildProjectName: $(MSBuildProjectName)" Importance="high" />
+    <Message Text="TargetName: $(TargetName)" Importance="high" />
+    <Message Text="TargetPath: $(TargetPath)" Importance="high" />
+    <Message Text="MSBuildProjectFile: $(MSBuildProjectFile)" Importance="high" />
+    <Message Text="MSBuildProjectName: $(MSBuildProjectName)" Importance="high" />
+    <Message Text="TargetExt: $(TargetExt)" Importance="high" />
+    <Message Text="TargetFileName: $(TargetFileName)" Importance="high" />
+    <Message Text="DevEnvDir: N/A" Importance="high" />
+    <Message Text="OutputPath: $(OutputPath)" Importance="high" />
+    <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)" Importance="high" />
+    <Message Text="SolutionName: $(SolutionName)" Importance="high" />
+    <Message Text="SolutionPath: $(SolutionPath)" Importance="high" />
+    <Message Text="SolutionDir: $(SolutionDir)" Importance="high" />
+    <Message Text="SolutionName: $(SolutionName)" Importance="high" />
+    <Message Text="Platform: $(Platform)" Importance="high" />
+    <Message Text="ProjectExt: $(MSBuildProjectExtension)" Importance="high" />
+    <Message Text="SolutionExt: $(SolutionExt)" Importance="high" />
+  </Target>
+
 </Project>
