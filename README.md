@@ -1,0 +1,1 @@
+# DMS.Demo.MSBuild.Macros.Net8
